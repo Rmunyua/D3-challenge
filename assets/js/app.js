@@ -20,7 +20,7 @@ var SVG = d3.select("#scatter")
 var chart_group = SVG.append("g")
 
 // Pull csv data from CSV file
-d3.csv("/assets/data/data.csv").then(function(Data) {
+d3.csv("data.csv").then(function(Data) {
 
   // format data from csv file as numbers
   Data.forEach(function(data) {
